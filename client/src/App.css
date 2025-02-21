@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.quiz-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.timer {
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 15px;
+}
+
+.question-box {
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-button {
+  background: #ff7675;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.option-button:hover {
+  background: #d63031;
+}
+
+.input-box {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.score {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d3436;
+  margin-top: 15px;
+}
+
+/* Add to App.css */
+.history-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.history-list li {
+  background: #f1f2f6;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .quiz-container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .option-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
